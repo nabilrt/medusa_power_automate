@@ -1,0 +1,34 @@
+{
+  "CreatedEngineVersion": {
+    "Major": 2,
+    "Minor": 3,
+    "Build": 184,
+    "Revision": 22217,
+    "MajorRevision": 0,
+    "MinorRevision": 22217
+  },
+  "ModuleReferences": [
+    {
+      "AssemblyName": "Microsoft.Flow.RPA.Desktop.Modules.WebAutomation.Actions",
+      "Name": "WebAutomation",
+      "PublicKeyToken": "31bf3856ad364e35",
+      "Type": "Standard",
+      "Version": {
+        "Major": 1,
+        "Minor": 8,
+        "Build": 0,
+        "Revision": 0,
+        "MajorRevision": 0,
+        "MinorRevision": 0
+      }
+    }
+  ],
+  "EngineVersion": {
+    "Major": 2,
+    "Minor": 0,
+    "Build": 184,
+    "Revision": 22217,
+    "MajorRevision": 0,
+    "MinorRevision": 22217
+  }
+}

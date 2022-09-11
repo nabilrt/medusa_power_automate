@@ -1,0 +1,8 @@
+@@ConnectionString: ''
+@@Type: 'Local'
+@@DisplayName: 'Computer'
+IMPORT 'controlRepo.appmask' AS appmask
+IMPORT 'imageRepo.imgrepo' AS imgrepo
+@SENSITIVE: []
+WebAutomation.LaunchChrome.LaunchChrome Url: $'''http://localhost:8000/store''' WindowState: WebAutomation.BrowserWindowState.Maximized ClearCache: False ClearCookies: False WaitForPageToLoadTimeout: 60 Timeout: 60 BrowserInstance=> Browser
+WebAutomation.ExtractData.ExtractTableInExcel BrowserInstance: Browser Control: $'''html > body > div:eq(0) > div > main > div > div:eq(1) > ul > li''' ExtractionParameters: {[$'''a > div > div:eq(1) > span''', $'''Own Text''', $'''''', $'''Value #1'''], [$'''a > div > div:eq(1) > div > span''', $'''Own Text''', $'''''', $'''Value #2'''] } PostProcessData: True TimeoutInSeconds: 60 ExcelInstance=> ExcelInstance
